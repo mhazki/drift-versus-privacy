@@ -156,8 +156,6 @@ Questions about this policy or about privacy in Drift Versus:
 
 Drift Versus is built on some work by other people. Thank you to all of them.
 
-### Audio
-
 - *Car tire squeal skid loop* by **Tom Haigh (audible-edge)**, via
   [OpenGameArt](https://opengameart.org/content/car-tire-squeal-skid-loop) —
   licensed [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
@@ -167,7 +165,3 @@ Drift Versus is built on some work by other people. Thank you to all of them.
   OpenGameArt — CC0 (public domain).
 - Engine samples from *Realistic Engine Sounds 2* by Skril Studio, Unity Asset Store.
 - Music from *Racing Music Pack* by Fan Zoo, Unity Asset Store.
-
-### Interface
-
-- Icon shapes drawn after [Phosphor Icons](https://phosphoricons.com/) (MIT).
