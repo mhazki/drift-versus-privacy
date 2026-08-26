@@ -4,7 +4,8 @@ title: Privacy Policy & Credits
 
 # Drift Versus — Privacy Policy & Credits
 
-**Effective date: 25 August 2026**
+**Effective date: 27 August 2026**
+
 
 This policy explains what happens to information when you play **Drift Versus**
 ("the game"), a mobile racing game published by Muhammad Hazki Hariowibowo ("we", "us").
@@ -13,13 +14,14 @@ This policy explains what happens to information when you play **Drift Versus**
 
 ## The short version
 
-- The game itself **does not collect, transmit or store any personal
-  information about you.** It has no accounts, no login, no servers, and no
-  analytics.
+- The game has **no accounts, no login and no servers of its own**, and never
+  asks who you are.
 - Your progress is saved **only on your own device**. We cannot see it.
+- The game sends us a **small amount of anonymous usage data** — which races
+  were played and how they went — under a random ID that is not linked to you.
+  In the EEA, the UK and Switzerland it sends none.
 - The game shows ads supplied by **Google AdMob**. Google receives information
-  from your device in order to serve those ads. That is the only company that
-  receives anything.
+  from your device in order to serve those ads.
 - If you are in the European Economic Area, the United Kingdom or Switzerland,
   you will be asked to make a choice about ads the first time you play, and you
   can change that choice at any time from **Settings → Privacy Options**.
@@ -29,25 +31,47 @@ This policy explains what happens to information when you play **Drift Versus**
 
 ## 1. Information the game collects
 
-**None that leaves your device.**
+**Nothing that identifies you.** The game has no accounts and never asks for
+your name, email address, contacts, location or anything similar.
 
-Drift Versus contains no analytics, no crash reporting, no advertising
-identifier collection of its own, and no networking code. It never uploads
-anything to us, and we operate no servers that could receive it.
+### Usage data
 
-The game does write files to your device's private app storage, so that it can
-remember your progress between sessions:
+To understand how the game is played, it sends us a small number of
+**anonymous usage events**: the app was opened, a race was started, a race
+finished (which course, win or loss, score, time and in-game purse earned), a
+reward ad was watched or skipped, an interruption ad was shown, and a purchase
+was made (which product, and whether it went through). Each event carries the
+app version, the operating system, and a **random installation ID** that the
+game generates the first time it runs. That ID is not derived from your device,
+your advertising identifier or anything about you, and we cannot connect it to
+you. Uninstalling the game discards it.
+
+This data is received and stored for us by **PostHog**, a product-analytics
+service, on servers in the United States. Like any web service, PostHog sees
+the IP address the events arrive from; we do not use it to identify anyone.
+PostHog processes this data only on our behalf, under its own privacy policy:
+<https://posthog.com/privacy>.
+
+**If you are in the EEA, the UK or Switzerland, no usage data is sent.** The
+game asks Google's consent platform which region it is in, and in those
+regions the usage reporting stays off. It also stays off for anyone who has
+told the game they are under the age gate.
+
+### Data kept on your device
+
+The game also writes files to your device's private app storage, so that it
+can remember your progress between sessions:
 
 | What | Why |
 |---|---|
 | Race progress, cars owned and in-game currency | So you keep what you earned |
 | Sound and display preferences | So the game opens the way you left it |
 | Your recorded consent choices | So you are not asked the same question repeatedly |
-| Gameplay records — lap times, scores, and inputs from races you drive | Used by the game to show your personal bests and to help us diagnose problems on our own test devices |
+| The random installation ID described above | So the usage data from one install is counted once |
 
 These files are stored in the app's private storage area, are readable only by
-the game, are never transmitted anywhere, and are **deleted when you uninstall
-the game**. We have no way to access them.
+the game, are never uploaded, and are **deleted when you uninstall the game**.
+We have no way to access them.
 
 ## 2. Information collected by advertising
 
@@ -59,7 +83,9 @@ Google may receive and process information including your device's advertising
 identifier, IP address, device type and operating system, general location
 derived from your IP address, and how you interacted with an ad. **We do not
 receive this information.** We see only aggregate, anonymous reports — for
-example, how many ads were shown in total.
+example, how many ads were shown in total. The usage data described in section
+1 is never shared with Google, and the random installation ID is never sent to
+it.
 
 How Google uses this data is governed by Google's own policies:
 
@@ -104,8 +130,13 @@ reward" ads remain available, because they are a way to earn in-game currency
 rather than an interruption, and removing them would take something away from
 you rather than give something back.
 
+**To stop usage data being sent**, uninstall the game. There is no separate
+switch for it inside the game; the data is anonymous, and in the regions where
+the law requires an explicit choice it is not collected at all.
+
 **To delete everything the game has stored**, uninstall it. All local data goes
-with it.
+with it, including the installation ID, so nothing sent after a reinstall can
+be connected to what came before.
 
 ## 5. Children
 
@@ -118,33 +149,40 @@ please contact us at the address below and we will act on it.
 
 ## 6. Data retention
 
-We hold no personal data about you, so there is nothing for us to retain or
-delete on request. Data stored on your device stays there until you uninstall
-the game or clear its data. Data held by Google as an advertising partner is
-retained according to Google's own policies, linked in section 2.
+Usage data (section 1) is kept for **no longer than twelve months** from the
+day it is received, then deleted. It is held only in aggregate-ready form —
+events under a random ID — and we never build profiles of individual players
+from it. Data stored on your device stays there until you uninstall the game
+or clear its data. Data held by Google as an advertising partner is retained
+according to Google's own policies, linked in section 2.
 
 ## 7. Your rights
 
 Depending on where you live, you may have rights to access, correct, delete, or
 restrict the processing of your personal data, or to object to it.
 
-Because we neither collect nor hold personal data, most of these rights are
-exercised directly against Google as the party that does. Google's privacy
-policy, linked in section 2, explains how. For anything relating to this game
-specifically, contact us and we will help.
+The usage data we hold is not linked to you, and we have no way to find the
+events that came from your device unless you send us the installation ID from
+the game's `analytics.json` file. If you do, we will delete them. Everything
+else — the advertising data — is held by Google, and those rights are exercised
+against Google as the party that holds it; Google's privacy policy, linked in
+section 2, explains how. For anything relating to this game specifically,
+contact us and we will help.
 
 ## 8. Security
 
-Because no personal data is transmitted to or stored by us, there is no
-database of player information that could be breached. Data on your device is
-protected by your device's own app sandboxing and whatever passcode or
-biometric lock you have set.
+We hold no database of player identities that could be breached: the usage
+data we keep is anonymous events under random IDs, sent over an encrypted
+connection and stored by PostHog under its own security programme. Data on
+your device is protected by your device's own app sandboxing and whatever
+passcode or biometric lock you have set.
 
 ## 9. Changes to this policy
 
-If the game changes in a way that affects this policy — for example if analytics
-were ever added — we will update this page and change the effective date at the
-top. Material changes will also be surfaced in the game itself.
+If the game changes in a way that affects this policy — for example if crash
+reporting were ever added, or usage data were ever collected in more regions —
+we will update this page and change the effective date at the top. Material
+changes will also be surfaced in the game itself.
 
 ## 10. Contact
 
