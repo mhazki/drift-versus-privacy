@@ -31,14 +31,19 @@ Adding a custom domain later is safe: GitHub Pages redirects the
 
 ## The look
 
-There is no Jekyll theme. `_layouts/default.html` and `assets/css/style.css`
-are the whole thing: one scrolling column, no sidebar at any width, in the
-game's own palette and type (Barlow Semi Condensed, the tokens copied out of
+There is no Jekyll theme. `_layouts/default.html` and
+`assets/css/drift-versus.css` are the whole thing: one scrolling column, no
+sidebar at any width, in the game's own palette and type (Barlow Semi Condensed, the tokens copied out of
 the shell's `Shell.uss`). The page is opened from inside a portrait phone
 game, so it is laid out for that and merely gets wider margins on a desktop.
 What it does *not* borrow is the game's sheared panel — a wall of legal text
 inside leaning boxes reads as a joke. If the game's palette moves, move the
 tokens at the top of the stylesheet with it.
+
+The stylesheet is deliberately **not** called `style.css`. Naming no theme in
+`_config.yml` does not get you no theme — the legacy Pages build injects a
+default one, and it emits `assets/css/style.css` too. It won that collision on
+the first deploy and served normalize.css to the world for ten minutes.
 
 ## Editing
 

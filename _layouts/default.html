@@ -15,7 +15,11 @@
      500/600 and their italics are exactly what the shell ships, so the page
      and the button that opened it are set in the same type. -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap">
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<!-- NOT `assets/css/style.css`. GitHub Pages' legacy build injects a default
+     theme when `_config.yml` names none, and that theme also emits
+     `assets/css/style.css` — it won the collision and served normalize.css
+     over this page for one deploy. A path no theme claims is the fix. -->
+<link rel="stylesheet" href="{{ '/assets/css/drift-versus.css' | relative_url }}">
 </head>
 <body>
 
