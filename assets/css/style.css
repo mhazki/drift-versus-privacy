@@ -1,0 +1,254 @@
+---
+---
+/* Drift Versus — the published page's whole stylesheet.
+
+   The palette is COPIED from the game's shell (TRV `Shell.uss` :root, palette
+   of 2026-08-15), not invented here: a player taps Settings -> ABOUT & PRIVACY
+   and lands in a browser, and the two screens should look like one product.
+   If the shell's palette moves, move these with it.
+
+   What is deliberately NOT copied: the shear. Every drawn shape in the game is
+   one sheared, chamfered panel leaning 8.29 degrees. That reads as a control
+   you press; a wall of legal text set inside leaning boxes reads as a joke.
+   So the page takes the colour, the type and the italic caps, and leaves the
+   silhouette in the game.
+
+   One column, always. No sidebar at any width — the layout the phone gets is
+   the layout the desktop gets, only wider-margined. */
+
+:root {
+    /* ---- ground (Shell.uss) ---- */
+    --canvas:  #162234;
+    --card:    #0D151B;
+    --surface: #19232C;
+    --border:  #0B1119;
+
+    /* ---- chrome ---- */
+    --accent-yellow: #ECAE2C;
+
+    /* ---- type ---- */
+    --ink:      #f2ede4;
+    --ink-mute: #9aa0b0;
+
+    --column: 40rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+    /* An anchor jump must not land the heading under the sticky masthead. */
+    scroll-padding-top: 4rem;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "Barlow Semi Condensed", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    /* Barlow Semi Condensed is narrow. 18px here is roughly a 16px normal
+       face; below that the policy stops being readable at arm's length. */
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+.wrap {
+    width: 100%;
+    max-width: var(--column);
+    margin: 0 auto;
+    /* The right/left pair carries the notch inset on a landscape phone. */
+    padding: 0 max(1.25rem, env(safe-area-inset-left))
+             0 max(1.25rem, env(safe-area-inset-right));
+}
+
+/* ---- masthead ---------------------------------------------------------
+   Sticky, because the jump chips are the only navigation and a policy is a
+   long scroll. Solid canvas, never translucent: text scrolling visibly under
+   a blurred bar is the one place a legal page cannot afford to look busy. */
+
+.masthead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding-top: env(safe-area-inset-top);
+}
+
+.masthead .wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.wordmark {
+    margin: 0;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 1.15rem;
+    color: var(--ink);
+}
+
+.jump {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* Not the game's swept button — a plain flat chip. Same ink, same italic
+   caps, no shear (see the header of this file). */
+.jump a {
+    display: block;
+    padding: 0.2rem 0.6rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--ink-mute);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.jump a:hover, .jump a:focus {
+    color: var(--canvas);
+    background: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+}
+
+/* ---- the text --------------------------------------------------------- */
+
+main { padding-bottom: 3rem; }
+
+/* Italic caps for every heading, which is the shell's rule for anything that
+   is not body copy. Body copy stays upright: the game never sets a paragraph
+   this long, and italics at this length are a different, worse page. */
+h1, h2, h3 {
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.15;
+    color: var(--ink);
+}
+
+h1 {
+    margin: 2rem 0 0.25rem;
+    font-size: 1.9rem;
+    letter-spacing: 0.03em;
+}
+
+/* Section heads carry the one yellow mark on the page. A rule above rather
+   than a bar beside: the column is narrow, and a left bar would eat into it
+   on the phone this is read on. */
+h2 {
+    margin: 2.75rem 0 0.75rem;
+    padding-top: 0.85rem;
+    border-top: 2px solid var(--accent-yellow);
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.05em;
+    color: var(--accent-yellow);
+}
+
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.4rem; }
+ul, ol { padding-left: 1.2rem; }
+li::marker { color: var(--accent-yellow); }
+
+strong { font-weight: 600; color: #fff; }
+
+a { color: var(--accent-yellow); text-decoration: underline; }
+a:hover, a:focus { color: #fff; }
+
+/* There is no rule here dressing a bold-only paragraph as a caption, and
+   there was: `p > strong:only-child` looked like it would catch the
+   effective-date line alone, but `:only-child` counts ELEMENTS and ignores
+   text, so it also caught every paragraph whose single bit of emphasis was a
+   product name — the opening sentence set "Drift Versus" as a grey caption
+   mid-line. A bold line reads perfectly well as a bold line. */
+
+hr {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--border);
+}
+
+/* The source separates the summary with `---` on both sides. Where one of
+   those lands directly above a section head, the head's own yellow rule is
+   already the separator, and two lines 30px apart is a stutter. */
+hr:has(+ h2) { display: none; }
+
+/* ---- the one table ---------------------------------------------------
+   Section 1's what/why grid. Scrolls inside itself rather than pushing the
+   page sideways, which on a 360px phone it otherwise would. */
+table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 0 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+    min-width: 9rem;
+}
+
+th {
+    background: var(--card);
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    color: var(--ink-mute);
+}
+
+td { background: var(--surface); }
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: 0.9rem 1rem;
+    background: var(--surface);
+    border-left: 3px solid var(--accent-yellow);
+    color: var(--ink-mute);
+}
+
+blockquote :last-child { margin-bottom: 0; }
+
+/* ---- foot ---- */
+.foot {
+    padding-top: 1.5rem;
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+    border-top: 1px solid var(--border);
+    color: var(--ink-mute);
+    font-size: 0.85rem;
+}
+
+.foot p { margin: 0 0 0.25rem; }
+
+/* Wider screens get a wider margin and slightly larger type. They do NOT get
+   a second column or a sidebar — see the header of this file. */
+@media (min-width: 40rem) {
+    body { font-size: 19px; }
+    h1 { font-size: 2.3rem; }
+    h2 { font-size: 1.45rem; }
+    main { padding-bottom: 4rem; }
+}

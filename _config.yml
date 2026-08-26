@@ -1,4 +1,8 @@
+# No `theme:` line, and that is the point. This site used jekyll-theme-minimal
+# until 2026-08-26; that theme puts a fixed sidebar beside the text on any
+# viewport over 960px and reads as somebody else's project page. The page is
+# opened from inside a portrait phone game (Settings -> ABOUT & PRIVACY), so
+# it is laid out as one scrolling column in the game's own palette instead.
+# `_layouts/default.html` + `assets/css/style.css` are the whole theme.
 title: Drift Versus
-description: Privacy Policy
-theme: jekyll-theme-minimal
-show_downloads: false
+description: Privacy policy and credits

@@ -1,11 +1,10 @@
 ---
-title: Privacy Policy
+title: Privacy Policy & Credits
 ---
 
-# Privacy Policy — Drift Versus
+# Drift Versus — Privacy Policy & Credits
 
 **Effective date: 25 August 2026**
-
 
 This policy explains what happens to information when you play **Drift Versus**
 ("the game"), a mobile racing game published by Muhammad Hazki Hariowibowo ("we", "us").
@@ -151,6 +150,24 @@ top. Material changes will also be surfaced in the game itself.
 
 Questions about this policy or about privacy in Drift Versus:
 
-**driftversus.dev@gmail.com**
+**[driftversus.dev@gmail.com](mailto:driftversus.dev@gmail.com)**
 
----
+## Credits
+
+Drift Versus is built on some work by other people. Thank you to all of them.
+
+### Audio
+
+- *Car tire squeal skid loop* by **Tom Haigh (audible-edge)**, via
+  [OpenGameArt](https://opengameart.org/content/car-tire-squeal-skid-loop) —
+  licensed [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+  *Modified: filtered and looped.*
+- *[100 CC0 metal and wood SFX](https://opengameart.org/content/100-cc0-metal-and-wood-sfx)*
+  and *[100 CC0 SFX #2](https://opengameart.org/content/100-cc0-sfx-2)*, via
+  OpenGameArt — CC0 (public domain).
+- Engine samples from *Realistic Engine Sounds 2* by Skril Studio, Unity Asset Store.
+- Music from *Racing Music Pack* by Fan Zoo, Unity Asset Store.
+
+### Interface
+
+- Icon shapes drawn after [Phosphor Icons](https://phosphoricons.com/) (MIT).
