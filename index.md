@@ -16,7 +16,8 @@ This policy explains what happens to information when you play **Drift Versus**
 
 - The game has **no accounts, no login and no servers of its own**, and never
   asks who you are.
-- Your progress is saved **only on your own device**. We cannot see it.
+- Your progress is saved **only on your own device**, and may be included in
+  your device's own cloud backup if you use one. We cannot see it either way.
 - The game sends us a **small amount of anonymous usage data** — which races
   were played and how they went — under a random ID that is not linked to you.
   In the EEA, the UK and Switzerland it sends none.
@@ -69,9 +70,19 @@ can remember your progress between sessions:
 | Your recorded consent choices | So you are not asked the same question repeatedly |
 | The random installation ID described above | So the usage data from one install is counted once |
 
-These files are stored in the app's private storage area, are readable only by
-the game, are never uploaded, and are **deleted when you uninstall the game**.
-We have no way to access them.
+These files are stored in the app's private storage area and are readable only
+by the game. **We never receive them and have no way to access them** — the
+game does not upload them anywhere.
+
+**They may, however, be included in your device's own cloud backup.** If you
+have iCloud Backup switched on (iOS) or Android's automatic backup (Android),
+your device may copy this app's saved data into your personal cloud account, in
+the same way it does for other apps you have installed. That backup belongs to
+you and is handled by Apple or Google under their own policies, not by us; it
+is not somewhere we can read. You can turn it off in your device's settings.
+
+Uninstalling the game deletes these files from your device. A copy may remain
+in your own backup until that backup is replaced or you delete it.
 
 ## 2. Information collected by advertising
 
