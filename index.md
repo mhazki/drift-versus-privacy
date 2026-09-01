@@ -199,7 +199,7 @@ changes will also be surfaced in the game itself.
 
 Questions about this policy or about privacy in Drift Versus:
 
-**[driftversus.dev@gmail.com](mailto:driftversus.dev@gmail.com)**
+**[hello.mhzworks@gmail.com](mailto:hello.mhzworks@gmail.com)**
 
 ## Credits
 
