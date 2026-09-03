@@ -10,7 +10,7 @@ jump: true
 
 
 This policy explains what happens to information when you play **Drift Versus**
-("the game"), a mobile racing game published by Muhammad Hazki Hariowibowo ("we", "us").
+("the game"), a mobile racing game published by Muhammad Hazki Hariowibowo, trading as MHz Games ("we", "us").
 
 ---
 
