@@ -25,14 +25,21 @@
 
 <header class="masthead">
   <div class="wrap">
-    <p class="wordmark">Drift Versus</p>
+    <!-- The site serves one policy per GAME, so the wordmark is the game's,
+         not the site's; `wordmark` in a page's front matter names it and the
+         site title is the fallback for the index. -->
+    <p class="wordmark">{{ page.wordmark | default: site.title }}</p>
     <!-- Two chips, not a sidebar. The credits sit at the foot of a long
          policy, and the row that opens this page now promises them by name;
-         this is the shortcut that makes that promise true on a phone. -->
+         this is the shortcut that makes that promise true on a phone.
+         Only a policy page has these anchors — the index would link to
+         nothing — so `jump: true` in front matter opts in. -->
+    {% if page.jump %}
     <nav class="jump">
       <a href="#the-short-version">Privacy</a>
       <a href="#credits">Credits</a>
     </nav>
+    {% endif %}
   </div>
 </header>
 
@@ -41,8 +48,11 @@
 </main>
 
 <footer class="wrap foot">
-  <p>Drift Versus — Muhammad Hazki Hariowibowo</p>
-  <p><a href="mailto:driftversus.dev@gmail.com">driftversus.dev@gmail.com</a></p>
+  <p>{{ page.wordmark | default: site.title }} — Muhammad Hazki Hariowibowo</p>
+  <!-- One contact address, and it is the one the POLICY BODY names. This
+       footer carried `driftversus.dev@gmail.com` until 2026-09-03 — a third
+       address that appeared nowhere else and was never monitored. -->
+  <p><a href="mailto:hello@mhzgames.com">hello@mhzgames.com</a></p>
 </footer>
 
 </body>

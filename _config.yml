@@ -8,5 +8,8 @@
 # Naming no theme does not mean no theme: the legacy Pages build injects a
 # default one regardless, and only the layout above shadows it. Hence the
 # stylesheet's name — see the comment on the <link> in the layout.
-title: Drift Versus
-description: Privacy policy and credits
+# The site is the PUBLISHER's now, not one game's: it serves a policy per game
+# under /<game>/, so the title is the fallback wordmark for the index page and
+# each policy overrides it via `wordmark` in front matter.
+title: MHz Games
+description: Privacy policies
