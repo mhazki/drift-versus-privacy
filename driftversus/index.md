@@ -186,10 +186,10 @@ least twelve months** — the minimum our analytics provider holds it for on the
 plan we use. We have not set a fixed expiry date on it: we remove it when we no
 longer need it, and all of it goes when we close the PostHog project. It is
 held only in aggregate-ready form — events under a random ID — and we never
-build profiles of individual players from it. If you would rather your own
-events were removed sooner, section 7 explains how to ask. Data stored on your
-device stays there until you uninstall the game or clear its data. Data held by
-Google as an advertising partner is retained according to Google's own
+build profiles of individual players from it. Section 7 explains why that also
+means we cannot find and remove one player's events on request. Data stored on
+your device stays there until you uninstall the game or clear its data. Data
+held by Google as an advertising partner is retained according to Google's own
 policies, linked in section 2.
 
 ## 7. Your rights
@@ -197,11 +197,15 @@ policies, linked in section 2.
 Depending on where you live, you may have rights to access, correct, delete, or
 restrict the processing of your personal data, or to object to it.
 
-The usage data we hold is not linked to you, and we have no way to find the
-events that came from your device unless you send us the installation ID from
-the game's `analytics.json` file. If you do, we will delete them. Everything
-else — the advertising data — is held by Google, and those rights are exercised
-against Google as the party that holds it; Google's privacy policy, linked in
+The usage data we hold is not linked to you. It sits under a random
+installation ID that the game keeps in its own private storage and never
+displays, so there is nothing you could send us that would identify your
+events, and nothing we could use to find them. That is one fact seen from both
+sides: it is why the data cannot be traced back to you, and it is why we cannot
+pick your events out of it to delete them on request. Uninstalling the game
+discards the ID, and nothing further is ever recorded against that install.
+Everything else — the advertising data — is held by Google, and those rights
+are exercised against Google as the party that holds it; Google's privacy policy, linked in
 section 2, explains how. For anything relating to this game specifically,
 contact us and we will help.
 
