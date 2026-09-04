@@ -6,7 +6,7 @@ jump: true
 
 # Drift Versus — Privacy Policy & Credits
 
-**Effective date: 3 September 2026**
+**Effective date: 4 September 2026**
 
 
 This policy explains what happens to information when you play **Drift Versus**
@@ -40,10 +40,10 @@ your name, email address, contacts, location or anything similar.
 ### Usage data
 
 To understand how the game is played, it sends us a small number of
-**anonymous usage events**: the app was opened, a race was started, a race
-finished, in-game currency was earned or spent, a reward ad was watched or
-skipped, an interruption ad was shown, and a purchase was made (which product,
-and whether it went through).
+**anonymous usage events**: the app was opened, how far through the game you
+have got, a race was started, a race finished, in-game currency was earned or
+spent, a reward ad was watched or skipped, an interruption ad was shown, and a
+purchase was made (which product, and whether it went through).
 
 The race events describe the driving and nothing else: which course and where
 it sits on the ladder, which mode, win or loss, how long the run took, the
@@ -52,6 +52,14 @@ the in-game purse the run paid. The currency event records that in-game Stacks
 moved — how many, why (a race purse, a daily ladder rung, a rewarded ad, a
 purchase, or buying a car) and the balance afterwards. None of this is money;
 Stacks cannot be cashed out and exist only inside the game.
+
+Once each time you open the game, it also sends **how far you have got**: how
+many districts you have reached, how many courses you have cleared, how many
+crew captains you have beaten, whether you have finished the campaign, how many
+cars you own, how many races you have run and your Stacks balance. This is the
+same progress the game already shows you on its own screens — it tells us
+where players get to and where they stop, which is how we know which parts of
+the game are too hard.
 
 Each event carries the app version, the operating system, a **random
 installation ID** that the game generates the first time it runs, the date that
