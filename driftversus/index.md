@@ -181,12 +181,16 @@ please contact us at the address below and we will act on it.
 
 ## 6. Data retention
 
-Usage data (section 1) is kept for **no longer than twelve months** from the
-day it is received, then deleted. It is held only in aggregate-ready form —
-events under a random ID — and we never build profiles of individual players
-from it. Data stored on your device stays there until you uninstall the game
-or clear its data. Data held by Google as an advertising partner is retained
-according to Google's own policies, linked in section 2.
+Usage data (section 1) is kept for as long as it is useful to us, and for **at
+least twelve months** — the minimum our analytics provider holds it for on the
+plan we use. We have not set a fixed expiry date on it: we remove it when we no
+longer need it, and all of it goes when we close the PostHog project. It is
+held only in aggregate-ready form — events under a random ID — and we never
+build profiles of individual players from it. If you would rather your own
+events were removed sooner, section 7 explains how to ask. Data stored on your
+device stays there until you uninstall the game or clear its data. Data held by
+Google as an advertising partner is retained according to Google's own
+policies, linked in section 2.
 
 ## 7. Your rights
 
