@@ -21,8 +21,9 @@ This policy explains what happens to information when you play **Drift Versus**
 - Your progress is saved **only on your own device**, and may be included in
   your device's own cloud backup if you use one. We cannot see it either way.
 - The game sends us a **small amount of anonymous usage data** — which races
-  were played and how they went — under a random ID that is not linked to you.
-  In the EEA, the UK and Switzerland it sends none.
+  were played, how they went, and how smoothly the game ran on your device —
+  under a random ID that is not linked to you. In the EEA, the UK and
+  Switzerland it sends none.
 - The game shows ads supplied by **Google AdMob**. Google receives information
   from your device in order to serve those ads.
 - If you are in the European Economic Area, the United Kingdom or Switzerland,
@@ -52,6 +53,29 @@ the in-game purse the run paid. The currency event records that in-game Stacks
 moved — how many, why (a race purse, a daily ladder rung, a rewarded ad, a
 purchase, or buying a car) and the balance afterwards. None of this is money;
 Stacks cannot be cashed out and exist only inside the game.
+
+### Performance data
+
+Once a race has been run, the game also sends **how smoothly it ran**: how many
+frames it drew and how long they took (the typical frame, the slowest, and how
+many were late), how much of that time the processor and the graphics chip were
+busy, which graphics settings were in use, and whether the device reported
+itself as running hot.
+
+That measurement is only meaningful next to the hardware that produced it, so
+the same event carries **what kind of device the game is running on**: the
+device model name, the graphics chip name, the operating system version, how
+much memory and graphics memory it has, how many processor cores, and the size
+and refresh rate of the screen. This is a description of a phone model — the
+same for every copy of that phone — and not an identifier: it contains no
+serial number, no advertising ID and nothing that singles out your device among
+others of its kind.
+
+We collect it for one reason. The game aims to run at 60 frames per second on
+mid-range hardware, and Android phones vary enormously; without knowing which
+models struggle, the only alternative is to make every phone run the lowest
+settings. This data is what lets better-looking graphics be turned on for the
+devices that can hold the frame rate.
 
 Once each time you open the game, it also sends **how far you have got**: how
 many districts you have reached, how many courses you have cleared, how many
