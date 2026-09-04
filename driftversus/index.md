@@ -6,7 +6,7 @@ jump: true
 
 # Drift Versus — Privacy Policy & Credits
 
-**Effective date: 27 August 2026**
+**Effective date: 3 September 2026**
 
 
 This policy explains what happens to information when you play **Drift Versus**
@@ -27,7 +27,7 @@ This policy explains what happens to information when you play **Drift Versus**
   from your device in order to serve those ads.
 - If you are in the European Economic Area, the United Kingdom or Switzerland,
   you will be asked to make a choice about ads the first time you play, and you
-  can change that choice at any time from **Settings → Privacy Options**.
+  can change that choice at any time from **Settings → About & Privacy → Privacy Options**.
 - The game is **not directed to children under 13**.
 
 ---
@@ -41,13 +41,24 @@ your name, email address, contacts, location or anything similar.
 
 To understand how the game is played, it sends us a small number of
 **anonymous usage events**: the app was opened, a race was started, a race
-finished (which course, win or loss, score, time and in-game purse earned), a
-reward ad was watched or skipped, an interruption ad was shown, and a purchase
-was made (which product, and whether it went through). Each event carries the
-app version, the operating system, and a **random installation ID** that the
-game generates the first time it runs. That ID is not derived from your device,
-your advertising identifier or anything about you, and we cannot connect it to
-you. Uninstalling the game discards it.
+finished, in-game currency was earned or spent, a reward ad was watched or
+skipped, an interruption ad was shown, and a purchase was made (which product,
+and whether it went through).
+
+The race events describe the driving and nothing else: which course and where
+it sits on the ladder, which mode, win or loss, how long the run took, the
+drift score and how it was made up, how many times the car touched a wall, and
+the in-game purse the run paid. The currency event records that in-game Stacks
+moved — how many, why (a race purse, a daily ladder rung, a rewarded ad, a
+purchase, or buying a car) and the balance afterwards. None of this is money;
+Stacks cannot be cashed out and exist only inside the game.
+
+Each event carries the app version, the operating system, a **random
+installation ID** that the game generates the first time it runs, the date that
+ID was created, and a second random ID that identifies the current run of the
+app. The installation ID is not derived from your device, your advertising
+identifier or anything about you, and we cannot connect it to you. Uninstalling
+the game discards it.
 
 This data is received and stored for us by **PostHog**, a product-analytics
 service, on servers in the United States. Like any web service, PostHog sees
@@ -126,7 +137,7 @@ policies.
 the first time you play, provided by Google's User Messaging Platform. Your
 answer determines whether the ads you see are personalised.
 
-**You can change your answer at any time** from **Settings → Privacy Options**
+**You can change your answer at any time** from **Settings → About & Privacy → Privacy Options**
 inside the game. This option appears wherever a consent choice applies to you.
 
 **On any device**, you can also limit ad tracking through your device's own
@@ -215,4 +226,5 @@ Drift Versus is built on some work by other people. Thank you to all of them.
   and *[100 CC0 SFX #2](https://opengameart.org/content/100-cc0-sfx-2)*, via
   OpenGameArt — CC0 (public domain).
 - Engine samples from *Realistic Engine Sounds 2* by Skril Studio, Unity Asset Store.
-- Music from *Racing Music Pack* by Fan Zoo, Unity Asset Store.
+- Music: *Engine Fast* (menu) and *Downhill from here* (race), both original
+  to this project.
